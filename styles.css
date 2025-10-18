@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #0a0f1e, #141b2d, #000000);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+}
+
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8),
+    0 0 20px rgba(255, 255, 255, 0.6),
+    0 0 30px rgba(255, 255, 255, 0.4);
+    border-right: 4px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 0;
+    display: inline-block;
+    animation: typing 2.5s steps(20) forwards, blink 0.7s infinite;
+}
+
+
+.join-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #5865F2;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+    position: relative;
+    top: 20px;
+    opacity: 0;
+    animation: fadeUp 1s ease-in-out forwards 2.5s;
+    box-shadow: 0 0 15px rgba(88, 101, 242, 0.7);
+}
+
+.join-btn:hover {
+    background-color: #4752C4;
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(88, 101, 242, 1);
+}
+
+
+@keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
