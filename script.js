@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const serverName = "End Community";
+    const serverName = "Farmsium";
     const h1Element = document.getElementById("server-name");
 
     let i = 0;
@@ -13,3 +13,4 @@ document.addEventListener("DOMContentLoaded", function () {
 
     typeEffect();
 });
+
